@@ -31,6 +31,7 @@ def over?(board)
   (!won?(board).nil?) || draw?(board) || full?(board)
 end
 def winner(board)
-  won?(board),:nil
+  winningmove = won?(board)
+  !winningmove.nil? ? board[winningmove[0]] : nil
 p won?(['X','O','O']) == false
   
