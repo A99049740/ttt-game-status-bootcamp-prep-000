@@ -33,5 +33,6 @@ end
 def winner(board)
   winningmove = won?(board)
   !winningmove.nil? ? board[winningmove[0]] : nil
+end
 p won?(['X','O','O']) == false
   
