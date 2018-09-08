@@ -29,5 +29,7 @@ def draw?(board)
 end
 def over?(board)
   (!won?(board).nil?) || draw?(board) || full?(board)
+end
+
 p won?(['X','O','O']) == false
   
